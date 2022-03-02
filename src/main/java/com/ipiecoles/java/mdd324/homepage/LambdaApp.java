@@ -12,6 +12,7 @@ public class LambdaApp implements RequestHandler<Object,GatewayResponse> {
         List<Citation> citations = null;
         Map<String, String> headers = new HashMap<>();
         headers.put("Content-Type", "application/json");
+        headers.put("Access-Control-Allow-Origin", "https://pjvilloud.github.io");
         try {
             citations = CitationService.getCitations();
         } catch (Exception e) {
