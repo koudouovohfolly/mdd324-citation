@@ -9,6 +9,9 @@ public class Citation {
         this.quote = quote;
     }
 
+    public Citation(Object author) {
+    }
+
     public String getAuthor() {
         return author;
     }

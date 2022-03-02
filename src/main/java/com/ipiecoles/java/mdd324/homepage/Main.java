@@ -26,7 +26,7 @@ public class Main {
         HashMap<String, Object> quote = (HashMap<String, Object>) quotes.get(0);
         System.out.println(quote.get("quote"));
         System.out.println(quote.get("author"));
-        Citation citation = new Citation(quote.get("author"));
+        Citation citation = new Citation((String) quote.get("author"), (String) quote.get("quote"));
 
 
         //Entité Java => JSON
